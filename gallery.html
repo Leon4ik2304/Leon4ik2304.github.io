@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BELKA LETAGA</title>
+	<style>
+		@import'style.css';
+		@import 'undo.css';
+		img{
+			width: 100%;
+			height: auto;
+			transition: 0.4s;
+			
+		}
+		.gallery{
+			display: flex;
+			flex-wrap: wrap;
+			margin: 3rem auto;
+			width: 980px;
+
+		}
+		.column {
+			width: calc(25% - 1rem);
+			flex: calc(25% - 1rem);
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			padding: 0 0.5rem;
+			gap: 10px;
+		}
+		.column . img {
+			transition: 0.4s ease-in-out;
+		}
+		.column > img:hover {
+			transform: scale(1.1);
+			filter: saturate(200%);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="" class="active">Галерея белок</a>
+			<a href="">Автор</a>
+			<a href="index.html">Главная</a>
+		</nav>
+		<div class="header_img_container">
+		<a href="index.html"><img src="https://img.icons8.com/ios-filled/344/squirrel.png"></a>
+		</div>
+
+		
+
+
+
+
+	</header>
+
+
+
+	<div  class="gallery"> 
+		<div  class="column">
+			<img src="https://funart.pro/uploads/posts/2021-04/1618147096_4-p-sibirskaya-belka-letyaga-zhivotnie-krasivo-4.jpg" alt="">
+			<img src="https://funart.pro/uploads/posts/2021-07/thumbs/1626163766_5-funart-pro-p-belka-letyaga-domashnyaya-zhivotnie-krasiv-6.jpg" >
+			<img src="https://funart.pro/uploads/posts/2021-07/1627570618_17-funart-pro-p-belaya-belka-letyaga-zhivotnie-krasivo-fot-22.jpg" >
+			<img src="https://smallivingworld.ru/800/600/https/pbs.twimg.com/media/ECW-szlXsAEaUaD.jpg" >
+			
+		</div>
+		<div class="column">
+			<img src="https://krasivosti.pro/uploads/posts/2021-09/1630547789_18-krasivosti-pro-p-gnezdo-belki-letyagi-zhivotnie-krasivo-fot-20.jpg" 
+			alt="">
+			<img src="https://funart.pro/uploads/posts/2022-06/1654766242_50-funart-pro-p-detenish-belki-letyagi-zhivotnie-krasivo-f-52.jpg" >
+			<img src="https://funart.pro/uploads/posts/2021-04/1618098271_46-p-yaponskaya-belka-letyaga-zhivotnie-krasivo-48.jpg" >
+		</div>
+		<div class="column">
+			<img src="https://kartinkin.net/uploads/posts/2022-03/1647120017_12-kartinkin-net-p-kartinki-belki-letyagi-12.jpg" alt="">
+			 <img src="https://sun9-21.userapi.com/impf/hd_6a22aanubHrPGipKL8ez6F5u686-SFFo0Eg/V-xeNDDblkU.jpg?size=368x604&quality=96&sign=af026a087506e9c96ccba3c23164909b&type=album" 
+			alt="">
+			<img src="https://4tololo.ru/sites/default/files/images/20153010155302.jpg" >
+		</div>
+		<div class="column">
+			<img src="https://kartinkin.net/uploads/posts/2022-03/1647120048_38-kartinkin-net-p-kartinki-belki-letyagi-40.jpg" 
+			alt="">
+			<img src="https://funart.pro/uploads/posts/2021-04/1618147148_60-p-sibirskaya-belka-letyaga-zhivotnie-krasivo-61.jpg" >
+			<img src="https://wildfrontier.ru/wp-content/uploads/2015/12/Obyknovennaya-letyaga1.jpg" >
+			
+			
+			
+		</div>
+		</div>
+	</div>
+
+
+
+	<div id="scrollTop">
+		<img src="https://www.pngmart.com/files/15/Vector-Arrow-Up-PNG-File.png" alt="">
+	</div>
+	<script>
+		document.querySelector('#scrollTop').addEventListener('click',()=> {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth"
+			});
+		})
+
+
+
+	</script>
+
+
+	<form action="https://formspree.io/f/moqbqevz" method="POST" class="form">
+		<input type="email" name="email" placeholder="Введите вашу почту">
+		<textarea  rows="3" placeholder="Введите сообщение по обратной связи" name="message"></textarea>
+		<button type="submit">Отправить</button>
+	</form>
+</body>
+</html>
